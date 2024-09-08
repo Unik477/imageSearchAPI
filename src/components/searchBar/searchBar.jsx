@@ -106,6 +106,7 @@ export default function SearchBar() {
         ))}
       </div>
 
+        {/* Page navigation */}
       <div className="controller-buttons">
         <p>
           Showing Page:{" "}
@@ -114,10 +115,21 @@ export default function SearchBar() {
           </b>
         </p>
         {page > 1 && (
-          <button onClick={() => setPages(page - 1)}>previous</button>
+          <button onClick={() => {setPages(page - 1)
+            window.scrollTo({
+              top: 0,
+              behavior: "smooth"  // Smooth scrolling effect
+          })
+          }}>previous</button>
         )}
+        
         {page < totalPages && (
-          <button onClick={() => setPages(page + 1)}>Next</button>
+          <button onClick={() => {setPages(page + 1)
+            window.scrollTo({
+              top: 0,
+              behavior: "smooth"  // Smooth scrolling effect
+          })
+          }}>Next</button>
         )}
       </div>
     </>
