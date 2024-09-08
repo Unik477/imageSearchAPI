@@ -1,0 +1,185 @@
+/* Basic styling for the Contact Us section */
+#search {
+    background-color: #ffffff;
+    background-image: url("https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YmVhY2h8ZW58MHx8MHx8fDA%3D");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    color: #f8f8f8;
+    text-align: center;
+}
+
+.search-container {
+   
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff5a;
+    border-radius: 10px;
+    
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.34);
+}
+
+/* Form heading styling */
+#search h2 {
+    font-size:50px;
+    text-shadow: rgb(11, 11, 11) 1px 0 10px;
+    margin-bottom: 20px;
+    color:rgb(255, 252, 252);
+}
+
+.search-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+.input-wrapper {
+    margin-bottom: 15px;
+    display: flex;
+    width: 90%;
+  }
+  
+  .search-icon {
+    color: #888;
+    padding: 15px 12px;
+    font-weight: bold;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #ffffff;
+  }
+  
+ 
+  
+.search-form input[type="text"] {
+    border: none;  
+  outline: none;  
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    /* margin-bottom: 15px; */
+    /* margin-left: 5px; */
+    font-weight: bold;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #ffffff;
+    font-size: 1em;
+    resize: vertical;
+}
+
+
+.search-form input::placeholder {
+    color: #aaa;
+}
+
+
+.contact-form input:focus {
+    border-color:var(--Mycolor);
+    outline: none;
+}
+
+
+.submit-btn {
+    font-weight:bold;
+       
+    background-color:var(--Mycolor);
+color: white;
+border-color:var(--Mycolor);
+    padding: 10px 20px;
+    text-align: center;
+    /* text-decoration: none; */
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+
+.submit-btn:hover {
+    background-color: white ;
+    border-color: var(--Mycolor);
+    color:var(--Mycolor);
+     box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.search-form h5{ 
+        color: white;
+        text-shadow: rgb(11, 11, 11) 1px 0 10px;
+        font-size: large;
+}
+
+.search-suggestions{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+}
+
+.suggestion-btn , .controller-buttons button{
+    display: flex;
+    margin: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: var(--Mycolor);
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.controller-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.controller-buttons  p{
+    color: rgb(211, 4, 211);
+    font-size: large;
+    margin-left: 10px;
+}
+.suggestion-btn:hover , .controller-buttons button:hover{
+    background-color: white;
+    color: var(--Mycolor);
+}
+@media (max-width: 480px) {
+    .search-container {
+        padding: 15px;
+    }
+
+    .search-form input {
+        font-size: 0.9em;
+    }
+
+    .submit-btn {
+        font-size: 1em;
+        padding: 10px 15px;
+    }
+}
+
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+.individual-image{
+    transition: all 0.5s ease;
+    height: 300px;
+    width: 350px;
+    margin: 10px 2px;
+    
+}
+
+.individual-image:hover{
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.555);
+}
+
+.search-name {
+    margin-left: 30px;
+}
